@@ -1,5 +1,10 @@
 # Spellcheck Fix
 
+[![Release](https://img.shields.io/github/v/release/rokokol/obsidian-spellcheck-fix?style=for-the-badge&logo=obsidian&color=7c3aed)](https://github.com/rokokol/obsidian-spellcheck-fix/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/rokokol/obsidian-spellcheck-fix/total?style=for-the-badge&color=22c55e)](https://github.com/rokokol/obsidian-spellcheck-fix/releases)
+[![License](https://img.shields.io/github/license/rokokol/obsidian-spellcheck-fix?style=for-the-badge&color=64748b)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Linux%20desktop-FCC624?style=for-the-badge&logo=linux&logoColor=black)](#)
+
 A tiny Obsidian plugin that wakes up the spellchecker. In big vaults it can stucks.
 
 ## The problem
