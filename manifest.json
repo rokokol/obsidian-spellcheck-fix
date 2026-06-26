@@ -1,0 +1,10 @@
+{
+  "id": "spellcheck-fix",
+  "name": "Spellcheck Fix",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Re-applies the spellchecker languages on startup to wake up the dormant Electron/Chromium spellchecker on Linux.",
+  "author": "rokokol",
+  "authorUrl": "https://github.com/rokokol",
+  "isDesktopOnly": true
+}
