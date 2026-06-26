@@ -1,7 +1,6 @@
 # Spellcheck Fix
 
-A tiny Obsidian plugin that wakes up the spellchecker on Linux, where it often
-stays silent until you manually re-pick the languages.
+A tiny Obsidian plugin that wakes up the spellchecker. In big vaults it can stucks.
 
 ## The problem
 
@@ -40,14 +39,11 @@ Other details:
 - It reads the languages **you** chose in Obsidian's settings — nothing is
   hard-coded (there's only a `["en-US", "ru"]` fallback if the session reports
   none).
-- It does **not** force spell-check on: if you turned it off in settings, the
-  plugin does nothing.
 - A command, **"Spellcheck Fix: Re-apply spellchecker languages now"**, lets you
   re-run it manually from the command palette (Ctrl/Cmd-P) if needed.
 
-> **Note:** Chromium only checks text *as you edit it*. Already-rendered text is
-> not re-checked retroactively, so to confirm it works, type a misspelled word
-> (e.g. `recieve`) rather than staring at existing text.
+> [!note]
+> Chromium only checks text *as you edit it*. Already-rendered text is not re-checked retroactively, so to confirm it works, start typing rather than staring at existing text.
 
 ## Installation (manual)
 
@@ -61,7 +57,3 @@ Other details:
 
 - Desktop only (the bug and the fix are specific to the Electron spellchecker).
 - Primarily aimed at Linux; harmless elsewhere.
-
-## License
-
-[MIT](LICENSE)
