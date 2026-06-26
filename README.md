@@ -24,6 +24,19 @@ restart".
 Once the workspace is ready, it re-applies the spellchecker languages, which
 re-attaches the dormant checker. That's the whole trick.
 
+Re-applying the *same* language list is a no-op, so it would not wake anything —
+the call has to be a real change:
+
+- **With two or more languages**, it reverses their order. That's a genuine
+  change, so a single call re-attaches the checker instantly with no delay.
+  (Which language is "primary" barely matters for a mixed setup, and the order
+  simply flips on each launch.)
+- **With a single language**, reversing changes nothing, so it briefly clears the
+  list and restores it ~200&nbsp;ms later — the clear-then-restore is the real
+  change that wakes the checker.
+
+Other details:
+
 - It reads the languages **you** chose in Obsidian's settings — nothing is
   hard-coded (there's only a `["en-US", "ru"]` fallback if the session reports
   none).
