@@ -6,6 +6,9 @@
 
 A tiny Obsidian plugin that wakes up the spellchecker. In big vaults it can get stuck.
 
+> [!IMPORTANT]
+> This bug is fixed in new Obsidian releases
+
 ## The problem
 
 On Linux (Electron/Chromium), Obsidian's spellchecker frequently does nothing:
